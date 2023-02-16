@@ -258,7 +258,7 @@ public class WebpFrameLoader {
         }
     }
 
-    void setOnEveryFrameReadyListener(@Nullable OnEveryFrameListener onEveryFrameListener) {
+    public void setOnEveryFrameReadyListener(@Nullable OnEveryFrameListener onEveryFrameListener) {
         this.onEveryFrameListener = onEveryFrameListener;
     }
 
@@ -408,7 +408,7 @@ public class WebpFrameLoader {
         }
     }
 
-    interface OnEveryFrameListener {
+    public interface OnEveryFrameListener {
         void onFrameReady();
     }
 }
